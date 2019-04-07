@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Webfejlesztés 2: Javascript beadandó 2019/2. félév</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row mb-3">
+                <div class="col-12 text-center d-flex flex-column">
+                    <h1>Webfejlesztés 2: Javascript beadandó</h1>
+                    <h2>Wall-e (Robotkaland)</h2>
+                </div>
+            </div>
+            <div id="pregame-menu" class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-xs-center">
+                    <div class="map-card d-flex justify-content-center align-items-center mr-lg-5 mr-md-3" name="small">
+                        <span>Small map</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-lg-start justify-content-md-start justify-content-sm-center justify-content-xs-center">
+                    <div class="map-card d-flex justify-content-center align-items-center" name="big">
+                        <span>Big map</span>
+                    </div>
+                </div>
+            </div>
+            <div id="game-container" class="row d-none">
+                <div class="col-12 text-center"><h3>ROUND </h3><h3 id="round-counter"></h3></div>
+                <div class="col-12 d-flex justify-content-center">
+                    <table id="game-table"></table>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="d-flex d-flex flex-column justify-content-center action-items-container">
+                        <div id="round-timer-outer">
+                            <span id="timer-value"></span>
+                            <div id="round-timer-inner">&nbsp;</div>
+                        </div>
+                        <div id="available-actions" class="w-100 h-50 text-center"></div>
+                        <div id="player-actions" class="w-100 h-50 text-center"></div>
+                    </div>
+                    <button id="end-turn-button" class="btn btn-success">Ready!</button>
+                </div>
+            </div>
+            <div id="game-over-container" class="row d-none">
+                <div class="col-12 d-flex flex-column align-items-center">
+                    <h1 id="end-game-text" class="victory-text">GAME OVER</h1>
+                    <button id="new-game-button" class="btn btn-lg btn-primary">Még egy kör?</button>
+                </div>
+            </div>
+            <div id="footer" class="row w-100">
+                <div class="col-12 text-center">
+                    <small>Vukman György ELTE 2019</small>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="game.js"></script>
+    </body>
+</html>
