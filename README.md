@@ -1,4 +1,1 @@
-# test
-igen.
-
-hozzáadtam valamit heló.
+# Webfejlesztés 2 Javascript beadandó, 2019/2
