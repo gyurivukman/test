@@ -1,1 +1,0 @@
-# Webfejlesztés 2 Javascript beadandó, 2019/2
